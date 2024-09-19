@@ -1,0 +1,24 @@
+<!-- 
+문제: 
+https://dingco.notion.site/Algorithm-5428fc44fc6e49d5bc9c03267d295843#4dee122226c04485b8f7cebbc2d13849 
+-->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>비밀번호 확인</title>
+    <script>
+      function password(input1, input2) {
+        const inputA = String(input1).toLowerCase();
+        const inputB = String(input2).toLowerCase();
+
+        console.log(inputA === inputB ? "회원가입을 축하합니다." : "비밀번호를 다시 확인해주세요.");
+      }
+
+      password("1234", "1235"); // "비밀번호를 다시 확인해주세요."
+      password("1234", "1234"); // "회원가입을 축하합니다."
+      password("1234", 1234); // "회원가입을 축하합니다."
+      password("aaaa", "AAAA"); // "회원가입을 축하합니다."
+    </script>
+  </head>
+  <body></body>
+</html>
